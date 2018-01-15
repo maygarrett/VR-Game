@@ -207,8 +207,8 @@ GameObject:
   - component: {fileID: 251435321}
   - component: {fileID: 251435320}
   - component: {fileID: 251435319}
-  - component: {fileID: 251435318}
   - component: {fileID: 251435317}
+  - component: {fileID: 251435318}
   m_Layer: 0
   m_Name: AI
   m_TagString: Untagged
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 251435316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d563b47c7dffa1c4ab8991e34340788b, type: 3}
+  m_Script: {fileID: 11500000, guid: 728f5f4dca8f4e648b245704fe0a5744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 8650665}
