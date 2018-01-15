@@ -12,13 +12,19 @@ public class AISimpleMovement : MonoBehaviour {
     private bool _isMoving = false;
     private bool _isDone = true;
 
+    private Material _material;
+
     private NavMeshAgent _agent;
+
+
 
     // Use this for initialization
     void Start()
     {
         _agent = gameObject.GetComponent<NavMeshAgent>();
         _agent.speed = _moveSpeed;
+        _material = gameObject.GetComponent<Renderer>().material;
+        _material.color = Color.blue;
         // agent.destination = _target.position;
     }
 
@@ -36,15 +42,20 @@ public class AISimpleMovement : MonoBehaviour {
             if (_isMoving && !_isDone)
             {
                 _agent.destination = _target.position;
+                _material.color = Color.green;
                 _isDone = true;
             }
 
             if (!_isMoving && !_isDone)
             {
                 _agent.destination = transform.position;
+                _material.color = Color.blue;
                 _isDone = true;
             }
         }
-        else { _agent.destination = transform.position; }
+        else {
+            _agent.destination = transform.position;
+            _material.color = Color.blue;
+        }
     }
 }
