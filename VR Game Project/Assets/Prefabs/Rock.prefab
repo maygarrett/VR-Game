@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 135386048129374360}
   - component: {fileID: 23134187543327852}
   - component: {fileID: 54686647609676410}
+  - component: {fileID: 114169814493603272}
+  - component: {fileID: 64550157988138772}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Untagged
@@ -37,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1110253700720724}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 22.87, z: 0}
+  m_LocalPosition: {x: -45.67, y: 45.4, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,14 +93,39 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1110253700720724}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 3000
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &64550157988138772
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1110253700720724}
+  m_Material: {fileID: 13400000, guid: b2a82f3c3d43a7a43af23cde9cb9f5f3, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 7f8c0defd59973b41b43e61468ae5158, type: 3}
+--- !u!114 &114169814493603272
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1110253700720724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db6bd9ded7786584d973c6a482585fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135386048129374360
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -107,7 +134,7 @@ SphereCollider:
   m_GameObject: {fileID: 1110253700720724}
   m_Material: {fileID: 13400000, guid: b2a82f3c3d43a7a43af23cde9cb9f5f3, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: 0}

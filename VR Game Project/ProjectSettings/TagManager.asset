@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shootable
   - Metal
+  - Ground
   layers:
   - Default
   - TransparentFX
